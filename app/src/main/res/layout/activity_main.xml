@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHUYỂN ĐỔI TIỀN"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_TienDau"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:hint="Nhập số tiền"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_drag_handle_24"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                />
+
+            <EditText
+                android:id="@+id/input_TienDich"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="20dp"
+                android:focusable="false"
+                android:maxLines="1"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_DoiTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐỔI"
+            android:backgroundTint="#C60B0B"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/spinner_TienDau"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/currency1_array"
+            android:background="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btn_DoiViTri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_import_export_24"
+            android:drawableTint="@color/black"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="2dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="26dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinner_TienDich"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/currency1_array"
+            android:background="@color/white"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lịch sử đổi"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/input_LichSuDoi"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:focusable="false"
+                android:lines="10"
+                android:maxLines="10"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                android:scrollbars="vertical"
+                android:imeOptions=""
+                android:gravity="start|top"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

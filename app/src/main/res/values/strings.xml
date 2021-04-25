@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConvertCurrency</string>
+    <string-array name="currency1_array">
+        <item>Currency 1</item>
+        <item>Currency 2</item>
+
+    </string-array>
+</resources>
